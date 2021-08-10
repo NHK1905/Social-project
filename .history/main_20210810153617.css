@@ -1,0 +1,112 @@
+@font-face {
+    font-family: AvenirNextLTProIt;
+    src: url(./fonts/AvenirNextLTPro-It.otf);
+}
+
+@font-face {
+    font-family: AvenirNextLTProRegular;
+    src: url(./fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+    font-family: AvenirNextLTProBold;
+    src: url(./fonts/AvenirNextLTPro-Bold.otf);
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-light: #f2f2f2;
+    --clr-light-100: #e8e8e8;
+    --clr-light-200: #d2d2d2;
+    --clr-light-300: #c2c2c2;
+    --clr-light-400: #b2b2b2;
+    --clr-light-500: #a2a2a2;
+    --clr-black: #565656;
+    --clr-black-100: #464646;
+    --clr-black-200: #363636;
+    --clr-black-300: #262626;
+    --clr-black-400: #161616;
+    --clr-black-500: #000000;
+    --background-color: #fff;
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+}
+
+html[data-theme='light'] {
+    --background-color: #fff;
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+}
+
+html[data-theme='dark'] {
+    --background-color: #131313;
+    --text-color: #F7F8F8;
+    --link-color: #828fff;
+}
+
+html[data-theme='dark'] body, #app {
+    background: #131313;
+}
+
+html[data-theme='dark'] .header {
+    background: #212121;
+    border-bottom: 1px solid #292929;
+}
+
+html[data-theme='dark'] .header {
+    background: #212121;
+    border-bottom: 1px solid #292929;
+}
+html[data-theme='dark'] .header-nav-brand {
+    color: #fff;
+}
+html[data-theme='dark'] .header-nav-search-input {
+    color: #fff;
+    background: #121212;
+    border: 1px solid #121212;
+}
+html[data-theme='dark'] .header-nav-search-input:focus {
+    background: #121212;
+    border: 1px solid #555;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, .05);
+}
+html[data-theme='dark'] .header-nav-menu-item-icon, .header-nav-menu-item.menu-item-user {
+    color: #e8e8e8;
+}
+html[data-theme='dark'] .header-nav-menu-item-icon:hover, .header-nav-menu-item.menu-item-user:hover {
+    color: #e8e8e8;
+    background: #343434;
+    border: 1px solid #343434;
+}
+html[data-theme='dark'] .header-nav-modal-search {
+    color: #d8d8d8;
+    background: #212121;
+}
+html[data-theme='dark'] .header-nav-modal-search-input {
+    background: #121212;
+    border: 1px solid #121212;
+}
+html[data-theme='dark'] .header-nav-modal-search-input:focus {
+    background: #121212;
+    border: 1px solid #555;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, .05);
+}
+
+html,
+body,
+#app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.65;
+    text-align: left;
+    color: var(--clr-black-300);
+    background: rgb(242, 242, 243);
+    font-family: AvenirNextLTProRegular;
+}
